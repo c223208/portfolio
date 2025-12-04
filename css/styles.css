@@ -5687,6 +5687,70 @@ textarea.form-control-lg {
   border-width: 0;
 }
 
+/* --- Color override: replace visual uses of #e6a756 with #4CAF50 --- */
+/* This overrides literal occurrences without editing the whole generated file. */
+:root {
+  --bs-primary: #4CAF50;
+  --bs-link-color: #4CAF50;
+  --bs-btn-bg: #4CAF50;
+  --bs-btn-border-color: #4CAF50;
+  --bs-dropdown-link-active-bg: #4CAF50;
+  --bs-nav-pills-link-active-bg: #4CAF50;
+  --bs-list-group-active-bg: #4CAF50;
+  --bs-progress-bar-bg: #4CAF50;
+  --bs-pagination-active-bg: #4CAF50;
+}
+
+/* Override selectors that use the literal color */
+.form-check-input:checked,
+.form-check-input[type=checkbox]:indeterminate {
+  background-color: #4CAF50 !important;
+  border-color: #4CAF50 !important;
+}
+.form-range::-webkit-slider-thumb,
+.form-range::-moz-range-thumb {
+  background-color: #4CAF50 !important;
+}
+.btn-primary {
+  background-color: #4CAF50 !important;
+  border-color: #4CAF50 !important;
+  color: #fff !important;
+}
+.btn-outline-primary {
+  --bs-btn-color: #4CAF50 !important;
+  --bs-btn-border-color: #4CAF50 !important;
+}
+.btn-outline-primary:hover {
+  color: #000 !important;
+  background-color: #4CAF50 !important;
+  border-color: #4CAF50 !important;
+}
+.progress-bar {
+  background-color: #4CAF50 !important;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #4CAF50 !important;
+  color: #fff !important;
+}
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #4CAF50 !important;
+  color: #fff !important;
+}
+.list-group-item.active {
+  background-color: #4CAF50 !important;
+  border-color: #4CAF50 !important;
+  color: #fff !important;
+}
+.page-link.active, .active > .page-link {
+  background-color: #4CAF50 !important;
+  border-color: #4CAF50 !important;
+  color: #fff !important;
+}
+
+/* Encoded occurrences in data URIs (if any) can remain; visual overrides above cover them. */
+
 .bs-popover-top > .popover-arrow, .bs-popover-auto[data-popper-placement^=top] > .popover-arrow {
   bottom: calc(-1 * (var(--bs-popover-arrow-height)) - var(--bs-popover-border-width));
 }
